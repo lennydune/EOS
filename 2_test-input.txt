@@ -1,0 +1,1 @@
+Dit is de input testfile voor opdracht 2. De output van de code komt in 2_test-output.txt.
