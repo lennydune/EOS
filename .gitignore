@@ -1,2 +1,6 @@
-# folders
+# extension-less files
+*
+!/**/
+!*.*
+
 bestanden/
