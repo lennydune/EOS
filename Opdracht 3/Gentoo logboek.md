@@ -71,6 +71,7 @@ Als bootloader heb ik __GRUB__ gekozen vanwege zijn versitaliteit. Grub is makke
 
 # Afronden
 Hij kan het filesystem niet herkennen waardoor ik niet kan rebooten. Zo kan ik dus ook geen window-manager en/of desktop-environment installeren en werkend krijgen. Verder werkt het.
+
 Ik gebruik linux full-time op mijn laptop en heb genoeg ervaring met onder andere Plasma en Gnome. Ook heb ik LXDE en Mate een beetje gebruikt en heel even een beejte i3 en Awesome gebruikt en ondervonden dat tiling window-managers niet voor mij weggelegd zijn.
 ## Vergelijking van WM's en DE's
 __Plasma__ staat op de tweede plaats van DE's qua impact op je systeem, het werkt vrij vlot en is Windows-achtig. De configureerbaarheid is extreem hoog zoals gebruikelijk is voor KDE-software.
