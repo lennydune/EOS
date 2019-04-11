@@ -24,15 +24,17 @@ Geen opmerkingen.
 
 > The MAKEOPTS variable defines how many parallel compilations should occur when installing a package. A good choice is the number of CPUs (or CPU cores) in the system plus one, but this guideline isn't always perfect.
 
-MAKEOPTS="-j3" in plaats van -j2. Dit omdat de VM 2 cores heeft en er is aangeraden om het aantal CPU's te nemen + 1.
+`MAKEOPTS="-j3"` in plaats van `"-j2"`. Dit omdat de VM 2 cores heeft en er is aangeraden om het aantal CPU's te nemen + 1.
 
 ## @World
 `@world` omvat de sets `@system` en `@selected`. `@system` is de set waar alle paketten in zitten die vereist zijn om het systeem te laten werken. `@selected` is de set waar alle paketten in zitten die de admin heeft geselecteerd.
 
-Het updaten van de set is handig voor de 
+Het updaten van `@world` op dit punt zorgt ervoor dat je een up-to-date systeem hebt om mee verder te werken.
 
-## USE-Flags
-
+## USE Variabele
+`USE="acl amd64 berkdb bzip2 cli crypt cxx dri fortran gdbm iconv ipv6 libtirpc ncurses nls nptl openmp pam pcre readline seccomp ssl tcpd unicode xattr zlib"` is de default voor de `USE` variable. Ik heb `avahi zsh-completion` toegevoegd.
+* Avahi is handig omdat ik dan bij het systeem kan komen met `ssh root@hostname.local` in plaats van `ssh root@ip.van.de.host`.
+* Zsh-completion omdat ik een groot fan ben van zsh en dat ga installeren zodra we zover zijn, en wat auto-completion kan ik waarderen.
 
 # Paketten
 
