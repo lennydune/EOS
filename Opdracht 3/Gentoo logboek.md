@@ -33,8 +33,15 @@ Het updaten van `@world` op dit punt zorgt ervoor dat je een up-to-date systeem 
 
 ## USE Variabele
 `USE="acl amd64 berkdb bzip2 cli crypt cxx dri fortran gdbm iconv ipv6 libtirpc ncurses nls nptl openmp pam pcre readline seccomp ssl tcpd unicode xattr zlib"` is de default voor de `USE` variable. Ik heb `avahi zsh-completion` toegevoegd.
-* Avahi is handig omdat ik dan bij het systeem kan komen met `ssh root@hostname.local` in plaats van `ssh root@ip.van.de.host`.
-* Zsh-completion omdat ik een groot fan ben van zsh en dat ga installeren zodra we zover zijn, en wat auto-completion kan ik waarderen.
+* __Avahi__ is handig omdat ik dan bij het systeem kan komen met `ssh root@hostname.local` in plaats van `ssh root@ip.van.de.host`.
+* __Zsh-completion__ omdat ik een groot fan ben van zsh en dat ga installeren zodra we zover zijn, en auto-completion kan ik waarderen.
+
+## Kernel Configuratie
+De opties die ik heb gekozen zijn de defaults van [het handboek](https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation#Activating_required_options)
+
+## fstab
+
+## rc-update en init-scripts
 
 # Paketten
 
