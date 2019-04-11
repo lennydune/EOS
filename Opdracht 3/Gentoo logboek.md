@@ -37,7 +37,7 @@ Het updaten van `@world` op dit punt zorgt ervoor dat je een up-to-date systeem 
 * __Zsh-completion__ omdat ik een groot fan ben van zsh en dat ga installeren zodra we zover zijn, en auto-completion kan ik waarderen.
 
 ## Kernel Configuratie
-De opties die ik heb gekozen zijn de defaults van [het handboek](https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation#Activating_required_options).
+De opties die ik heb gekozen zijn de defaults van [het handboek](https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation#Activating_required_options) en de opties om het beter te laten werken met de virtualisatiesoftware [QEMU](https://wiki.gentoo.org/wiki/QEMU/Linux_guest).
 
 ## fstab
 Ziet er uit als volgt:
@@ -45,6 +45,8 @@ Ziet er uit als volgt:
 ![fstab](https://cooledomeinnaam.nl/fstab.png)
 
 ## rc-update en init-scripts
+`rc-update` volgens hun man-page
+> OpenRC uses named runlevels.  Rather than editing some obscure file or managing a directory of symlinks, rc-update exists to quickly add or delete services to and from from different runlevels. All services must reside in the /etc/init.d or /usr/local/etc/init.d directories.  They must also be standard OpenRC scripts, meaning they must use openrc-run.
 
 # Paketten
 
