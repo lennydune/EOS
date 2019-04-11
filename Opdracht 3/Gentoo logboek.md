@@ -13,6 +13,7 @@ Voor het booten heb ik geen extra boot-opties aangegeven. Ik heb een VM met een 
   * Windows heeft 128 als max
 
 Het partitieschema ziet er als volgt uit:
+
 ![Partitieschema](http://cooledomeinnaam.nl/Partitieschema.png)
 
 # Het basissysteem
