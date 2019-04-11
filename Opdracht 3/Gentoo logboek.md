@@ -33,46 +33,46 @@ Het updaten van `@world` op dit punt zorgt ervoor dat je een up-to-date systeem 
 
 ## USE Variabele
 `USE="acl amd64 berkdb bzip2 cli crypt cxx dri fortran gdbm iconv ipv6 libtirpc ncurses nls nptl openmp pam pcre readline seccomp ssl tcpd unicode xattr zlib"` is de default voor de `USE` variable. Ik heb `avahi zsh-completion` toegevoegd.
-* __Avahi__ is handig omdat ik dan bij het systeem kan komen met `ssh root@hostname.local` in plaats van `ssh root@ip.van.de.host`.
-* __Zsh-completion__ omdat ik een groot fan ben van zsh en dat ga installeren zodra we zover zijn, en auto-completion kan ik waarderen.
+* `Avahi` is handig omdat ik dan bij het systeem kan komen met `ssh root@hostname.local` in plaats van `ssh root@ip.van.de.host`.
+* `Zsh-completion` omdat ik een groot fan ben van zsh en dat ga installeren zodra we zover zijn, en auto-completion kan ik waarderen.
 
 ## Kernel Configuratie
 De opties die ik heb gekozen zijn de defaults van [het handboek](https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation#Activating_required_options) en de opties om het beter te laten werken met de virtualisatiesoftware [QEMU](https://wiki.gentoo.org/wiki/QEMU/Linux_guest).
 
 ## fstab
-Ziet er uit als volgt:
+Bevat de volgende regels:
 
 ![fstab](https://cooledomeinnaam.nl/fstab.png)
 
 ## rc-update en init-scripts
-`rc-update` volgens hun man-page
+`rc-update` volgens hun man-page:
 > OpenRC uses named runlevels.  Rather than editing some obscure file or managing a directory of symlinks, rc-update exists to quickly add or delete services to and from from different runlevels. All services must reside in the /etc/init.d or /usr/local/etc/init.d directories.  They must also be standard OpenRC scripts, meaning they must use openrc-run.
 
 `init-scripts` zijn scripts bedoeld om uitgevoert te worden bij het opstarten van het systeem.
 
 # Paketten
 ## System Logger
-De gebruikte system logger is __sysklogd__. Een system logger is er om bij te houden wat je systeem doet, de logger zet elke actie in een een log-bestand die je kunt bekijken wanneer je maar wilt.
+De gebruikte system logger is `sysklogd`. Een system logger is er om bij te houden wat je systeem doet, de logger zet elke actie in een een log-bestand die je kunt bekijken wanneer je maar wilt.
 ### Alternatief
-__Metalog__ is een van de alternatieven voor sysklogd. Het voornaamste verschil ligt in de configureerbaarheid.
+`Metalog` is een van de alternatieven voor sysklogd. Het voornaamste verschil ligt in de configureerbaarheid.
 
 ## Cron Deamon
-__Cronie__ is de geinstalleerde cron-deamon. Cron-deamons worden gebruikt om taken te schedulen om ze met regelmaat uit te voeren, bijvoorbeeld elke dag om 14:00 of elke maand op de eerste donderdag.
+`Cronie` is de geinstalleerde cron-deamon. Cron-deamons worden gebruikt om taken te schedulen om ze met regelmaat uit te voeren, bijvoorbeeld elke dag om 14:00 of elke maand op de eerste donderdag.
 ### Alternatief
-__Fcron__ is een alternatief voor Cronie die veel configureerbaarder is dan Cronie.
+`Fcron` is een alternatief voor Cronie die veel configureerbaarder is dan Cronie.
 
 ## File Indexer
-__Mlocate__ is geïnstalleerd als file-indexer. File-indexers doen precies wat de naam zegt, je bestanden indexeren, daarna wordt de index opgeslagen in een database. De functionaliteit is vergelijkbaar met `find`, alleen kijkt `locate` standaard over je gehele systeem.
+`Mlocate` is geïnstalleerd als file-indexer. File-indexers doen precies wat de naam zegt, je bestanden indexeren, daarna wordt de index opgeslagen in een database. De functionaliteit is vergelijkbaar met `find`, alleen kijkt `locate` standaard over je gehele systeem.
 ### Alternatief
 `find` is een mogelijk alternatief, maar kijkt standaard alleen in het opgegeven pad.
 
 # Booten (revisited)
-Als bootloader heb ik __GRUB__ gekozen vanwege zijn versitaliteit. Grub is makkelijk in te stellen en compatibel met vrijwel alle systemen.
+Als bootloader heb ik `GRUB` gekozen vanwege zijn versitaliteit. Grub is makkelijk in te stellen en compatibel met vrijwel alle systemen.
 
 # Afronden
 Hij kan het filesystem niet herkennen waardoor ik niet kan rebooten. Zo kan ik dus ook geen window-manager en/of desktop-environment installeren en werkend krijgen. Verder werkt het.
 
-Ik gebruik linux full-time op mijn laptop en heb genoeg ervaring met onder andere Plasma en Gnome. Ook heb ik LXDE en Mate een beetje gebruikt en heel even een beejte i3 en Awesome gebruikt en ondervonden dat tiling window-managers niet voor mij weggelegd zijn.
+Ik gebruik linux full-time op mijn laptop en heb genoeg ervaring met onder andere Plasma en Gnome. Ook heb ik LXDE en Xfce gebruikt en heel even i3 en Awesome gebruikt en spoedig ondervonden dat tiling window-managers niet voor mij weggelegd zijn.
 ## Vergelijking van WM's en DE's
 __Plasma__ staat op de tweede plaats van DE's qua impact op je systeem, het werkt vrij vlot en is Windows-achtig. De configureerbaarheid is extreem hoog zoals gebruikelijk is voor KDE-software.
 
