@@ -24,7 +24,7 @@ Geen opmerkingen.
 
 > The MAKEOPTS variable defines how many parallel compilations should occur when installing a package. A good choice is the number of CPUs (or CPU cores) in the system plus one, but this guideline isn't always perfect.
 
-`MAKEOPTS="-j3"` in plaats van `"-j2"`. Dit omdat de VM 2 cores heeft en er is aangeraden om het aantal CPU's te nemen + 1.
+`MAKEOPTS="-j3"` in plaats van `"-j2"`. Dit omdat de VM 2 cores heeft en het is aangeraden om het aantal CPU's te nemen +1.
 
 ## @World
 `@world` omvat de sets `@system` en `@selected`. `@system` is de set waar alle paketten in zitten die vereist zijn om het systeem te laten werken. `@selected` is de set waar alle paketten in zitten die de admin heeft geselecteerd.
