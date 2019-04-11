@@ -11,7 +11,7 @@ Max 2TB per partitie | In theorie oneindige partities
 ## Partitieschema
 Het partitieschema ziet er als volgt uit:
 
-![Partitieschema](http://cooledomeinnaam.nl/Partitieschema.png)
+![Partitieschema](https://cooledomeinnaam.nl/Partitieschema.png)
 
 Ik heb het schema gemaakt met Parted en geen geadvanceerde opties gebruikt.
 
@@ -37,9 +37,12 @@ Het updaten van `@world` op dit punt zorgt ervoor dat je een up-to-date systeem 
 * __Zsh-completion__ omdat ik een groot fan ben van zsh en dat ga installeren zodra we zover zijn, en auto-completion kan ik waarderen.
 
 ## Kernel Configuratie
-De opties die ik heb gekozen zijn de defaults van [het handboek](https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation#Activating_required_options)
+De opties die ik heb gekozen zijn de defaults van [het handboek](https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation#Activating_required_options).
 
 ## fstab
+Ziet er uit als volgt:
+
+![fstab](https://cooledomeinnaam.nl/fstab.png)
 
 ## rc-update en init-scripts
 
