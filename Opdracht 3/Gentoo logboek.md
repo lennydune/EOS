@@ -7,8 +7,8 @@ MBR - Master Boot Record | GPT - GUID Partition Table
 ------------------------ | --------------------------
 Maximaal 4 primary partities | Detectie voor datacorruptie
 Max 2TB per partitie | In theorie oneindige partities
-  | Beperkt door de OS
-  | Windows heeft 128 als max
+. | Beperkt door de OS
+. | Windows heeft 128 als max
 
 Het partitieschema ziet er als volgt uit:
 
