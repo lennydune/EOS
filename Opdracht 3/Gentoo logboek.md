@@ -48,8 +48,23 @@ Ziet er uit als volgt:
 `rc-update` volgens hun man-page
 > OpenRC uses named runlevels.  Rather than editing some obscure file or managing a directory of symlinks, rc-update exists to quickly add or delete services to and from from different runlevels. All services must reside in the /etc/init.d or /usr/local/etc/init.d directories.  They must also be standard OpenRC scripts, meaning they must use openrc-run.
 
-# Paketten
+`init-scripts` zijn scripts bedoeld om uitgevoert te worden bij het opstarten van het systeem.
 
+# Paketten
+## System Logger
+De gebruikte system logger is sysklogd. Een system logger is er om bij te houden wat je systeem doet, de logger zet elke actie in een een log-bestand die je kunt bekijken wanneer je maar wilt.
+### Alternatief
+__Metalog__ is een van de alternatieven voor sysklogd. Het voornaamste verschil ligt in de configureerbaarheid.
+
+## Cron Deamon
+Cronie is de geinstalleerde cron-deamon. Cron-deamons worden gebruikt om taken te schedulen om ze met regelmaat uit te voeren, bijvoorbeeld elke dag om 14:00 of elke maand op de eerste donderdag.
+### Alternatief
+__Fcron__ is een alternatief voor Cronie die veel configureerbaarder is dan Cronie.
+
+## File Indexer
+mLocate is geïnstalleerd als file-indexer. File-indexers doen precies wat de naam zegt, je bestanden indexeren, daarna wordt de index opgeslagen in een database. De functionaliteit is vergelijkbaar met `find`, alleen kijkt `locate` standaard over je gehele systeem.
+### Alternatief
+`find` is een mogelijk alternatief, maar kijkt standaard alleen in het opgegeven pad.
 
 # Booten (revisited)
 
