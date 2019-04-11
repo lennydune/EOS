@@ -73,10 +73,10 @@ Als bootloader heb ik __GRUB__ gekozen vanwege zijn versitaliteit. Grub is makke
 Hij kan het filesystem niet herkennen waardoor ik niet kan rebooten. Zo kan ik dus ook geen window-manager en/of desktop-environment installeren en werkend krijgen. Verder werkt het.
 Ik gebruik linux full-time op mijn laptop en heb genoeg ervaring met onder andere Plasma en Gnome. Ook heb ik LXDE en Mate een beetje gebruikt en heel even een beejte i3 en Awesome gebruikt en ondervonden dat tiling window-managers niet voor mij weggelegd zijn.
 ## Vergelijking van WM's en DE's
-Plasma staat op de tweede plaats van DE's qua impact op je systeem, het werkt vrij vlot en is Windows-achtig. De configureerbaarheid is extreem hoog zoals gebruikelijk is voor KDE-software.
+__Plasma__ staat op de tweede plaats van DE's qua impact op je systeem, het werkt vrij vlot en is Windows-achtig. De configureerbaarheid is extreem hoog zoals gebruikelijk is voor KDE-software.
 
-Gnome staat onderaan qua performance, het is prima te gebruiken desondanks. Je hebt een redelijk aantal mogelijke aanpassingen te maken maar lang zoveel niet als je hebt met KDE. Gnome-software heeft meer de neiging om hetgeen ze doen uitstekend te doen.
+__Gnome__ staat onderaan qua performance, het is prima te gebruiken desondanks. Je hebt een redelijk aantal mogelijke aanpassingen te maken maar lang zoveel niet als je hebt met KDE. Gnome-software heeft meer de neiging om hetgeen ze doen uitstekend te doen.
 
-LXDE is de lichtste DE. Het is Windows-achtig en heeft niet bepaald een moderne uitstraling. Het is de standaard DE van Raspbian, dit vanwege de lage impact op de systeem resources.
+__LXDE__ is de lichtste DE. Het is Windows-achtig en heeft niet bepaald een moderne uitstraling. Het is de standaard DE van Raspbian, dit vanwege de lage impact op de systeem resources.
 
-i3 en Awesome zijn tiling window-managers. Dit betekend dat ze geen overlap toestaan van vensters (behalve wanneer je de optie aan zet, voorzover ik weet heeft Awesome die). Deze zijn licht van gewicht en bijna eindeloos configureerbaar. Deze configuratie gaat via scripts en je kunt het laten doen en tonen wat je wilt.
+__i3__ en __Awesome__ zijn tiling window-managers. Dit betekend dat ze geen overlap toestaan van vensters (behalve wanneer je de optie aan zet, voorzover ik weet heeft Awesome die). Deze zijn licht van gewicht en bijna eindeloos configureerbaar. Deze configuratie gaat via scripts en je kunt het laten doen en tonen wat je wilt.
