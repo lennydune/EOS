@@ -7,20 +7,21 @@ MBR - Master Boot Record | GPT - GUID Partition Table
 ------------------------ | --------------------------
 Maximaal 4 primary partities | Detectie voor datacorruptie
 Max 2TB per partitie | In theorie oneindige partities
-. | Beperkt door de OS
-. | Windows heeft 128 als max
 
 Het partitieschema ziet er als volgt uit:
 
 ![Partitieschema](http://cooledomeinnaam.nl/Partitieschema.png)
 
-Ik heb het schema gemaakt met 
+Ik heb het schema gemaakt met Parted en geen geadvanceerde opties gebruikt.
 
 # Het basissysteem
-
+Geen opmerkingen.
 
 # Configuratie
+Enige opmerking:
+MAKEOPTS="-j3" in plaats van -j2. Dit omdat de VM 2 cores heeft en er is aangeraden om het aantal CPU's te nemen + 1.
 
+Ik heb hier de optionele '<mirrorselect>' uitgevoerd
 
 # Paketten
 
