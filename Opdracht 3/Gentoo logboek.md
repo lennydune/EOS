@@ -21,7 +21,7 @@ Geen opmerkingen.
 Enige opmerking:
 MAKEOPTS="-j3" in plaats van -j2. Dit omdat de VM 2 cores heeft en er is aangeraden om het aantal CPU's te nemen + 1.
 
-Ik heb hier de optionele '<mirrorselect>' uitgevoerd
+Ik heb hier de optionele `<mirrorselect>` uitgevoerd
 
 # Paketten
 
